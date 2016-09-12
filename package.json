@@ -1,0 +1,32 @@
+{
+  "name": "buttalks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kavinraj",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-uglifycss": "^1.0.6"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitallyinspiredmedia/buttalks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/digitallyinspiredmedia/buttalks/issues"
+  },
+  "homepage": "https://github.com/digitallyinspiredmedia/buttalks#readme",
+  "description": ""
+}
