@@ -1,0 +1,456 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input,
+label,
+select,
+button,
+textarea
+{
+  margin:0;
+  border:0;
+  padding:0;
+  display:inline-block;
+  vertical-align:middle;
+  white-space:normal;
+  background:none;
+  line-height:1;
+  
+  /* Browsers have different default form fonts */
+  font-size:13px;
+  font-family:Arial;
+}
+
+/* Remove the stupid outer glow in Webkit */
+input:focus
+{
+  outline:0;
+}
+
+/* Box Sizing Reset
+-----------------------------------------------*/
+
+/* All of our custom controls should be what we expect them to be */
+input,
+textarea
+{
+  -webkit-box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  box-sizing:content-box;
+}
+
+/* These elements are usually rendered a certain way by the browser */
+button,
+input[type=reset],
+input[type=button],
+input[type=submit],
+input[type=checkbox],
+input[type=radio],
+select
+{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+/* Text Inputs
+-----------------------------------------------*/
+
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=range],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week]
+{
+  border-bottom: 1px solid #000;
+}
+
+/* Button Controls
+-----------------------------------------------*/
+
+input[type=checkbox],
+input[type=radio]
+{
+  width:13px;
+  height:13px;
+}
+
+/* File Uploads
+-----------------------------------------------*/
+
+input[type=file]
+{
+
+}
+
+/* Search Input
+-----------------------------------------------*/
+
+/* Make webkit render the search input like a normal text field */
+input[type=search]
+{
+  -webkit-appearance:textfield;
+  -webkit-box-sizing:content-box;
+}
+
+/* Turn off the recent search for webkit. It adds about 15px padding on the left */
+::-webkit-search-decoration
+{
+  display:none;
+}
+
+/* Buttons
+-----------------------------------------------*/
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"]
+{
+  /* Fix IE7 display bug */
+  overflow:visible;
+  width:auto;
+}
+
+/* IE8 and FF freak out if this rule is within another selector */
+::-webkit-file-upload-button
+{ 
+  padding:0;
+  border:0;
+  background:none;
+}
+
+/* Textarea
+-----------------------------------------------*/
+
+textarea 
+{
+  /* Move the label to the top */
+  vertical-align:top;
+  
+  /* Turn off scroll bars in IE unless needed */
+  overflow:auto;
+}
+
+/* Selects
+-----------------------------------------------*/
+
+select
+{
+
+}
+
+select[multiple] 
+{
+  /* Move the label to the top */
+  vertical-align:top;
+}
+:focus,a,a:hover,a:focus{
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+}
+
+/* font */
+@font-face {
+    font-family: 'besom_2regular';
+    src: url('../font/besom-free-font-webfont.woff2') format('woff2'),
+         url('../font/besom-free-font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+  background: #f7f4e7;
+}
+@media screen and (min-width: 210px) {
+  body{
+    display: none;
+  }
+}
+@media screen and (min-width: 300px) {
+  body{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+    display: block;
+  }
+ header{
+  display: block;
+  max-height: 30px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+ }
+
+h1.logo{
+  text-indent: -9999px;
+  background-image: url('../image/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 166px;
+  height: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+  float: left;
+}
+h1.logo a{
+  opacity: 0;
+}
+.menuone {
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    position: relative;
+    right: 20px;
+    float: right;
+}
+.logo:after,
+.logo:before,
+.menuone:after,
+.menuone:before{
+  clear: both;
+  content: " ";
+  display: block;
+}
+.menuone .burger-menu,
+.menuone .burger-menu:after,
+.menuone .burger-menu:before{
+  position: absolute;
+  margin: 0 auto;
+  top: 15px;
+  right: 2px;
+  width: 26px;
+  height: 2px;
+  border-radius: 5px;
+  background-color: #003051;
+   -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+.menuone .burger-menu:after{
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 7px;
+  right: 0px;
+}
+.menuone .burger-menu:before{
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -7px;
+  right: 0px;
+}
+
+body.pushmenu-open{
+    left: -240px;
+    border-right: 1px solid #000;
+    position: relative;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    overflow-x: hidden;
+    position: relative;
+}
+.logo.pushmenu-icon {
+    right: 25px;
+    position: fixed;
+}
+#header{
+  display: none;
+}
+#header.active{
+  display: block;
+    right: 0px;
+    top: 80px;
+    overflow: auto;
+    right: -250px;
+    overflow: auto;
+    right: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    width: 240px;
+    height: 100%;
+    z-index: 1000;
+    position: fixed;
+}
+
+.menuone .burger-menu.active{
+  background: transparent;
+  -webkit-transition: all 0.6s ease-in;
+    -moz-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in;
+}
+.menuone .burger-menu.active:before{
+      -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+  top: 0;
+}
+.menuone .burger-menu.active:after{
+      -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  top: 0;
+}
+ #header li{
+  display: block;
+  font: normal 16px/1.3745em 'Dosis', sans-serif;
+  padding: 20px;
+ }
+ #header li:nth-child(4){
+  display: none;
+ }
+#header li > a{
+  color: #003051;
+}
+
+#header li.active,
+#header li:hover,
+#header li:focus{
+  border-bottom: 1px solid #f38466;
+}
+#header li.logo:hover,
+#header li.logo:focus{
+  border: 0;
+}
+
+
+}
+@media screen and (min-width: 720px) {
+  h1.logo,
+  .menuone{
+    display: none;
+  }
+header{
+  min-height: 80px;
+}
+#header{
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+#header li{
+  display: inline-block;
+  padding: 10px 10px;
+  font: normal 16px/normal 'besom_2regular' ,'Dosis' , sans-serif;
+}
+#header li:nth-child(4) {
+    display: inline-block;
+}
+li.logo{
+  text-indent: -9999px;
+  background-image: url('../image/logo.png'), url('../image/logo-pattern.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto, contain;
+  width: 200px;
+  height: 40px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+li.logo a{
+  opacity: 0;
+}
+
+
+#header li:last-child{
+  padding-right: 20px;
+  background: url('../image/loginicon.png') no-repeat center right;
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+  #header li {
+    font: normal 16px/1.3745em 'besom_2regular' ,'Dosis' , sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+li.logo{
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto, contain;
+  width: 150px;
+  height: 30px;
+}
+
+
+
+
+
+}
+
+@media screen and (min-width: 1200px) {
+   #header li {
+    font: normal 20px/1.3745em 'besom_2regular' ,'Dosis' , sans-serif;
+   }
+   li.logo{
+      background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto, contain;
+  width: 280px;
+  height: 40px;
+   }
+
+}
