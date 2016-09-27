@@ -252,6 +252,16 @@ h1.logo{
   cursor: pointer;
   float: left;
 }
+h1.logo a {
+    width: 100%;
+    height: 32px;
+    display: block;
+}
+li.logo a {
+    display: block;
+    height: 40px;
+    width: 100%;
+}
 .menuone {
     width: 32px;
     height: 32px;
