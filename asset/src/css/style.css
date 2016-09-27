@@ -252,9 +252,6 @@ h1.logo{
   cursor: pointer;
   float: left;
 }
-h1.logo a{
-  opacity: 0;
-}
 .menuone {
     width: 32px;
     height: 32px;
@@ -263,14 +260,7 @@ h1.logo a{
     right: 20px;
     float: right;
 }
-.logo:after,
-.logo:before,
-.menuone:after,
-.menuone:before{
-  clear: both;
-  content: " ";
-  display: block;
-}
+
 .menuone .burger-menu,
 .menuone .burger-menu:after,
 .menuone .burger-menu:before{
@@ -398,7 +388,7 @@ header{
 #header li:nth-child(4) {
     display: inline-block;
 }
-li.logo{
+#header li:nth-child(4){
   text-indent: -9999px;
   background-image: url('../image/logo.png'), url('../image/logo-pattern.png');
   background-repeat: no-repeat;
@@ -408,9 +398,6 @@ li.logo{
   height: 40px;
   margin: 0 10px;
   cursor: pointer;
-}
-li.logo a{
-  opacity: 0;
 }
 
 
