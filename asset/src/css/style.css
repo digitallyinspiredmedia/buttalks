@@ -455,3 +455,8 @@ li.logo{
    }
 
 }
+@media screen and (min-width: 1400px) {
+#header li {
+    font: normal 30px/1.3745em 'besom_2regular' ,'Dosis' , sans-serif;
+   }
+}
