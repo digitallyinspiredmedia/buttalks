@@ -443,7 +443,8 @@ li.logo{
 
 @media screen and (min-width: 1200px) {
    #header li {
-    font: normal 20px/1.3745em 'besom_2regular' ,'Dosis' , sans-serif;
+    font: normal 24px/1.3745em 'besom_2regular' ,'Dosis' , sans-serif;
+    padding: 10px 15px;
    }
    li.logo{
       background-repeat: no-repeat;
